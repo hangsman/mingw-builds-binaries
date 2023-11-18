@@ -26,9 +26,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        arch: [x86_64, i686]
-        threads: [posix, win32, mcf]
-        exceptions: [seh, dwarf]
+        arch: [i686]
+        threads: [win32]
+        exceptions: [sjlj]
         msvcrt: [msvcrt, ucrt]
         exclude:
           - arch: x86_64
